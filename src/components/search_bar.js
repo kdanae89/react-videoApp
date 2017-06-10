@@ -3,13 +3,20 @@ import React, {Component} from 'react';
 class SearchBar extends Component {
   constructor(props) {
     super(props);
-    //set state
+    //initializes state - only time we set the state this way
     this.state = { term: ''};
   }
   render() {
     //{} for vanilla elements
     //event handler
-    return <input onChange={event => console.log(event.target.value)} />;
+    //any time we change state - setState
+    return (
+      <div>
+        <input
+        value = {this.state.term}
+        onChange= {event => this.setState({ term: event.target.value})} />
+      </div>
+    );
   }
 //event
 //   onInputChange(event) {
