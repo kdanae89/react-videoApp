@@ -5,6 +5,7 @@
 
 .search-bar input {
   width: 75%;
+  border-radius: 5px;
 }
 
 .video-item img {
@@ -24,4 +25,16 @@
 
 .list-group-item:hover {
   background-color: #eee;
+}
+
+.search-bar .button {
+  display: inline-block;
+  background-color: white;
+  width: 4em;
+  margin-left: 0.5em;
+  border-radius: 5px;
+  background-image: url('./images/search-icon-psd-png.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto 35px;
 }
