@@ -11,10 +11,11 @@ const API_KEY = 'AIzaSyCbVgju_QyNamqdVp2Sov2gKyWykZoEnfw';
 //create a new component that produces some HTML
 //const is just an unmutable variable in ES6
 //in class componenthave to use this.props
+//class components are wanted when we have a concept of state
 class App extends Component {
   constructor(props) {
     super(props);
-
+//this is component level state, its own state
     this.state = {
       videos: [],
       selectedVideo: null

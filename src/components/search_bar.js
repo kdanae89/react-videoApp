@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class SearchBar extends Component {
   constructor(props) {
     super(props);
-    //initializes state - only time we set the state this way
+    //initializes state - only time we set the state this way is in a component
     this.state = { term: ''};
   }
   render() {
